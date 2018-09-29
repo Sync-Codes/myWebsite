@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css?family=Orbitron|Quicksand|Righteous");
+
+.card {
+  margin-left: 5px;
+  padding: 10px;
+}
+
+h3,
+.small {
+  position: absolute;
+  left: 16px;
+  z-index: 1;
+}
+
+div {
+  width: 100%;
+}
+
+#electron {
+  padding-bottom: 5px;
+}
+
+#span {
+  color: white;
+}
+
+.small {
+  bottom: 155px;
+  font-family: "Quicksand";
+  color: white;
+  font-size: 39px;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.github-logo,
+.twitter-logo,
+.insta-logo,
+.discord-logo {
+  z-index: 1;
+  font-size: 40px;
+  color: #ccc;
+  margin-left: 55px;
+}
+
+/* .dark{
+  padding: 15px;
+  background-color: #283593
+}
+
+aside#sidebar{
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+article#main-col{
+  float: left;
+  width: 65%;
+} */
+.cover-image {
+  width: 100%;
+  display: block;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.cover-image:after {
+  content: "";
+  height: 100vh;
+  background: url("./assets/showcase.jpg");
+  display: block;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(10px);
+  transition: all 1000ms;
+}
+
+.cover-image:hover::after {
+  filter: blur(0px);
+}
+
+.fa {
+  z-index: 1;
+  font-size: 24px;
+  position: absolute;
+  color: white;
+  top: 3%;
+  left: 2%;
+  transition: 0.5s;
+}
+
+.side-nav {
+  width: 0;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  opacity: 0.9;
+  overflow-y: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.side-nav a {
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #ccc;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-nav a:hover {
+  border-left: #e65100 solid 4px;
+  color: white;
+}
+
+#no-border {
+  border: none;
+}
+
+.side-nav .btn-close {
+  position: absolute;
+  top: 0;
+  right: 22px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+h3 {
+  font-size: 100px;
+  font-family: "Pincoyablack";
+  color: orangered;
+  left: 20px;
+  font-weight: 600;
+  bottom: 250px;
+}
+
+.avatar {
+  border-radius: 50%;
+  position: absolute;
+  right: 25px;
+  bottom: 200px;
+  z-index: 1;
+}
+
+@media (max-width: 568px) {
+  .cover-image:after {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .head,
+  .small,
+  .span {
+    display: none;
+  }
+
+  .avatar {
+    text-align: center;
+    top: 10%;
+    right: 25%;
+  }
+}
+
+@media (min-width: 568px) {
+  .cover-image:after {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .col-sm-3 {
+    grid-template-columns: 1fr;
+  }
+}
