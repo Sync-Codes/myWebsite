@@ -1,3 +1,3 @@
 ## My Official Website
 
-Can be found at - https://bhavyadang.netlify.com
+Can be found at - https://bhavyadang.ml
