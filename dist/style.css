@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Orbitron|Quicksand|Righteous");
+@import url("https://fonts.googleapis.com/css?family=Orbitron|Quicksand|Righteous|Righteous");
 
 @font-face {
   font-family: boldFont;
@@ -21,9 +21,6 @@ div {
   width: 100%;
 }
 
-#electron {
-  padding-bottom: 5px;
-}
 
 #span {
   color: white;
@@ -161,32 +158,87 @@ h3 {
   z-index: 1;
 }
 
-@media (max-width: 568px) {
-  .cover-image:after {
-    height: 100vh;
-    width: 100%;
-  }
+p.mobile-devices {
+  display: none;
+}
 
-  .head,
+@media(max-width: 568px) {
+
+  h3,
+  github-logo,
+  .twitter-logo,
+  .insta-logo,
+  .discord-logo,
   .small,
-  .span {
+  .fa {
     display: none;
   }
 
+  .cover-image::after {
+    filter: blur(0px);
+  }
+
   .avatar {
-    text-align: center;
-    top: 10%;
-    right: 25%;
-  }
-}
-
-@media (min-width: 568px) {
-  .cover-image:after {
-    height: 100vh;
-    width: 100%;
+    align-items: center;
+    top: 15px;
+    right: 22%;
   }
 
-  .col-sm-3 {
-    grid-template-columns: 1fr;
+  .card {
+    align-items: center;
+    padding: 50px;
+    margin-left: 85px;
+  }
+
+  /* .card>img {
+    width: 270px;
+  } */
+
+  .giphy {
+    width: 400px;
+    /* height: 230px; */
+  }
+
+  .gif {
+    width: 200px;
+    height: 200px;
+  }
+
+  .electro {
+    width: 180px;
+    height: 180px;
+  }
+
+  .electron {
+    width: 300px;
+    height: 420px;
+  }
+
+  .yt {
+    height: 200px;
+  }
+
+  .calc {
+    height: 200px;
+    width: 220px;
+  }
+
+  .encdec {
+    width: 220px;
+    height: 200px;
+  }
+
+  .encrypter {
+    height: 420px;
+  }
+
+  .wiki {
+    width: 220px;
+    height: 200px;
+  }
+
+  .wikipedia {
+    height: 440px;
+    width: 330px;
   }
 }
