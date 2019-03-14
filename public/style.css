@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body{
+margin: 0;
+/* background: url(https://www.salbii.com/wp-content/themes/salbii/images/wp-admin/layout-backgrounds/bgimg3.jpg) no-repeat cover; */
+}
+
+a{
+  font-family: 'Poppins';
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.identity{
+  transform: translate(10%, 50%);
+  float: right;
+  animation: identity 1.1s forwards ease-in;
+  opacity: 0;
+}
+
+@keyframes identity {
+  0%{
+  transform: translate(10%, -25%);
+  opacity: 0;
+  }
+  100%{
+  transform: translate(10%, 25%);
+  opacity: 1;
+  }
+
+}
+
+.myMessage{
+  font-family: 'Poppins';
+  font-size: 65px;
+  font-weight: bold;
+  padding: 1em 0 0 1em;
+  float: left;
+  width: 500px;
+  word-wrap: break-word;
+  animation: message 1.2s forwards ease-in; 
+   opacity: 0; 
+}
+
+@keyframes message {
+  0%{
+  transform: translate(10%, -25%);
+  opacity: 0;
+  }
+  100%{
+  transform: translate(10%, 5%);
+  opacity: 1;
+  }
+
+}
+
+footer{
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
