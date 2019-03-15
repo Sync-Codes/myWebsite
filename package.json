@@ -1,28 +1,25 @@
 {
-  "name": "hello-express",
-  "version": "0.0.1",
-  "description": "A simple Node app built on Express, instantly up and running.",
+  "name": "synccodes",
+  "version": "1.0.1",
+  "description": "Official website for SyncCodes.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.16.4",
-    "discord.js": "^11.4.2",
     "passport-oauth2": "^1.4.0",
     "express-session": "^1.15.6",
     "passport": "^0.4.0",
     "ejs": "^2.6.1",
-    "passport-discord": "^0.1.3",
-    "pg": "^7.7.1",
-    "canvas-constructor": "^2.1.0",
-    "canvas": "^2.3.0"
+    "node": "^11.11.0",
+    "npm": "^6.5.0"
   },
   "engines": {
-    "node": "8.x"
+    "node": "10.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/devsquad-website"
+    "url": "https://glitch.com/edit/#!/synccodes"
   },
   "license": "MIT",
   "keywords": [
