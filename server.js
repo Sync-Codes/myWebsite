@@ -2,13 +2,11 @@
 const express = require('express')
   , app = express()
   , path = require("path")
-  , session  = require('express-session')
-  , passport = require('passport');
 
 // Setting Views Engine
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-app.use(express.static('public'))
+app.use(express.static('views'))
 
 //Routes
 app.get("/", (req, res) => {
