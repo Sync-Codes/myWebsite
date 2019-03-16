@@ -2,6 +2,9 @@
 
 body{
 margin: 0;
+background-color: #fff;
+
+
 /* background: url(https://www.salbii.com/wp-content/themes/salbii/images/wp-admin/layout-backgrounds/bgimg3.jpg) no-repeat cover; */
 }
 
@@ -10,6 +13,9 @@ a{
   text-decoration: none;
   text-transform: uppercase;
 }
+
+
+
 
 .identity{
   border-radius: 50%;
@@ -36,12 +42,14 @@ a{
   font-family: 'Poppins';
   font-size: 65px;
   font-weight: bold;
-  padding: 1em 0 0 1em;
+  left: 5px;
+  padding: 1em 0 0 .5em;
+  color: hsl(210, 11%, 15%);
   float: left;
   width: 500px;
   word-wrap: break-word;
   animation: message 1.2s forwards ease-in; 
-   opacity: 0; 
+  opacity: 0; 
 }
 
 @keyframes message {
@@ -61,8 +69,9 @@ a{
   width: 100%;
   padding: 1.5em 0 3em 1em;
 /*   margin-top: 200px; */
-  height: 50px;
-  position: fixed;
+  height: 100px;
+  position: fixed; 
+  margin-bottom: 1em;
   background-color: hsl(210, 11%, 15%);
 /*   color: #fff;
   font-family: 'Poppins'; */
@@ -79,12 +88,34 @@ a{
 
 .icon{
   display: block;
-  padding: 0 3em 1em 3em;
-  font-size: 24px;
+  padding-right: 2em;
+  font-size: 25px;
   color: #fff;
   float: right;
   letter-spacing: 5px;
   text-decoration: none;
+}
+
+.icon:hover{
+ transform: scale(1.2);
+ transition: transform .4s ease 0s;
+color: #fff;
+}
+
+.bottom-footer{
+  bottom: 0;
+  background-color: hsl(210, 11%, 10%);
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  height: 50px;
+  color: #fff;
+  font-family: 'Poppins';
+  float: left;
+  display: block;
+  padding: 1em 3em ;
+  text-transform: uppercase;
+  letter-spacing: .4px;
 }
 
 

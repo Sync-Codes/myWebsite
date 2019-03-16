@@ -13,9 +13,6 @@ app.get("/", (req, res) => {
   res.render('index');
 });
 
-app.get("/projects", (req, res) => {
-  res.render('projects');
-});
 
 
 app.get('/login', (req, res) => {
@@ -31,7 +28,7 @@ app.get('/logout', (req, res) => {
 });
 
 app.get('/profile', (req, res) => {
-    
+    res.render('profile');
 });
 
 
