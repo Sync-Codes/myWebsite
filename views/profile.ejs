@@ -76,7 +76,44 @@
     </div>
     </div>
   </nav>
- 
+   <footer class="footer is-fixed-bottom">
+    <p class="f-text">
+      Made with ❤️ by Bhavya Dang (Sync)
+    </p>
+    <span class="icons text-is-left">
+      <a href="#" class="icon"> <i class="fab fa-instagram"></a>
+      <a href="#" class="icon"> <i class="fab fa-github"></a>
+      <a href="#" class="icon"> <i class="fab fa-discord"></a>
+      <a href="#" class="icon"> <i class="fab fa-youtube"></a>
+    </span>
+  </footer>
+    
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-firestore.js"></script>
+    <script>
+      // Initialize Firebase
+      const config = {
+        apiKey: "AIzaSyDMcIEcP28j0ZFTMlJpPITMAKs8yXIFMDU",
+        authDomain: "sync-auth.firebaseapp.com",
+        databaseURL: "https://sync-auth.firebaseio.com",
+        projectId: "sync-auth"
+      };
+      firebase.initializeApp(config);
+      
+      const auth = firebase.auth();
+      const db = firebase.firestore();
+      
+      db.setting({ timestampsInSnapshots: true });
+      
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132379867-1"></script>
+    <script type="text/javascript" src="canvasconstructor.master.min.js"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    </script>
 </body>
 
 </html>

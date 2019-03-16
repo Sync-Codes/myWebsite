@@ -71,16 +71,20 @@ a{
 .f-text{
   color: #fff;
   font-family: 'Poppins';
-  text-align: left;
-  display: inline-block;
+  float: left;
+  display: block;
 }
 
 
-a.icon{
-  padding: 1.5em 1em 3em 0;
+
+.icon{
+  display: block;
+  padding: 0 3em 1em 3em;
+  font-size: 24px;
   color: #fff;
-  text-align: right;
-  display: inline-block;
+  float: right;
+  letter-spacing: 5px;
   text-decoration: none;
 }
+
 
