@@ -17,9 +17,23 @@ app.get("/projects", (req, res) => {
   res.render('projects');
 });
 
-app.get('/about', (req, res) => {
-    res.render('about')
+
+app.get('/login', (req, res) => {
+    
 });
+
+app.get('/signup', (req, res) => {
+    res.render('signup')
+});
+
+app.get('/logout', (req, res) => {
+    
+});
+
+app.get('/profile', (req, res) => {
+    
+});
+
 
 
 const server = app.listen(3000, function () {
