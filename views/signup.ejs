@@ -13,9 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
             <!-- Global site tag (gtag.js) - Google Analytics -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -23,6 +21,12 @@
     <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase-firestore.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+    particlesJS.load('particles-js', '/particles.json', function() {
+    console.log('callback - particles.js config loaded');
+    });
+    </script>
     
     <script>
       // Initialize Firebase
@@ -38,15 +42,14 @@
       const db = firebase.firestore();
       const googleProvider = new firebase.auth.GoogleAuthProvider();
       const githubProvider = new firebase.auth.GithubAuthProvider();
-      </script>
-      <script src="/auth.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bcrypt@3.0.4/bcrypt.js"></script>
+    </script>
+    <script src="/auth.js"></script>
       <link rel="stylesheet" href="/style.css">
       <link href="https://cdn.glitch.com/cfc1231b-032b-48fc-96cf-ac3fdca38d14%2FCopy%20of%20SC.png?1552760735132" rel="icon">
-      <title>SyncCodes - Home</title>
+      <title>SyncCodes - SignUp</title>
 </head>
 
-<body>
+<body style="background: #222f3e">
 
     <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
@@ -59,7 +62,7 @@
 
     <div class="navbar-menu">
       <div class="navbar-start">
-        <a class="navbar-item is-active" href="/">
+        <a class="navbar-item" href="/">
           HOME
         </a>
             <a class="navbar-item" href="#contact">
@@ -78,7 +81,7 @@
     <div class="navbar-end">
       <div class="navbar-item">
         <div class="buttons">
-          <a class="button is-warning modal-trigger" href="#" id="signUpBtn">
+          <a class="button is-warning is-active" href="/signup" id="signUpBtn">
             Sign up
           </a>
           <a id="loginBtn" class="button is-light" href="/login">
@@ -92,36 +95,27 @@
     </div>
     </div>
   </nav>
+ 
+  <div class="container signupBox">
+    <form action="">
+      <div class="row">
+        <h2 style="text-align:center">Login with Social Media or Manually</h2>
+        
+        <div class="col">
+          <div class="hide-md-lg">
+            <p>Or sign in manually:</p>
+          </div>
   
-  <div class="bkg">
-    <div class="myMessage">
-    Online Courses 
-    and Tutorials
-    </div>
-    <div class="container">
-    <img class="is-1by1 identity" width="400px" height="200px" src="https://cdn.glitch.com/cfc1231b-032b-48fc-96cf-ac3fdca38d14%2FSC.png?1552744874337"/>
+          <input id="email" type="text" name="email" placeholder="Enter Email.." required>
+          <input id="password" type="password" name="password" placeholder="Enter Password.." required>
+          <input id="re_pass" type="password" name="re-pass" placeholder="Confirm Password" required>
+          <input type="submit" value="Signup">
+          <span class="al-acc">Already have an account?</span>
+          <a class="login-text" href="/login"><strong>Login</strong></a>
+        </div>
+      </div>
+    </form>
   </div>
-  <!-- <div class="modal">
-      <div class="container">
-    <div class="field">
-  <label class="label">Email</label>
-  <div class="control">
-    <input id="email" class="input" type="text" placeholder="Enter Email...">
-  </div>
-</div>
-
-<div class="field">
-  <span class="fas fa-times" id="close"></span>
-  <label class="label">Password</label>
-  <div class="control">
-    <input id="password" class="input" type="password" placeholder="Enter Password...">
-  </div>
-</div>
-  <div class="control">
-    <input id="btn" class="button is-warning is-outlined" type="submit" value="Submit">
-  </div>
-  </div>
-    </div> -->
   <footer>
    <div class="footer is-fixed-bottom">
     <p class="f-text">

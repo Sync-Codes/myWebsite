@@ -16,11 +16,11 @@ app.get("/", (req, res) => {
 
 
 app.get('/login', (req, res) => {
-    
+    res.render('login')
 });
 
 app.get('/signup', (req, res) => {
-    res.render('signup')
+     res.render('signup')
 });
 
 app.get('/logout', (req, res) => {
@@ -33,7 +33,7 @@ app.get('/profile', (req, res) => {
 
 
 
-const server = app.listen(3000, function () {
+const server = app.listen(8000, function () {
     console.log('Listening on port %s...', server.address().port);
 });
 
